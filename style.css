@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+a{
+    color: white;
+}
+
+.button{
+    background-color: #f17a5d;
+    padding: 10px 15px;
+    border-radius: 5%;
+    text-align: center;
+    border: none
+}
+
+.button:hover{
+    background-color:#f1533c;
+}
+
+/* header */
+header{
+    background-color: #dd5f42f8;
+    color: white;
+    text-align: center;    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.navbar ul{
+    list-style-type:none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.navbar li:hover{
+    text-decoration: underline;
+}
+
+
+/* featured Section */
+.featured-section{
+    background-color: #e2e2e2;
+    color:  #333333;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 30px;
+}
+
+.featured-section img{
+    height: 25%;
+    width: 45%;
+    border-radius: 7%;
+    object-fit: cover;
+}
+
+.featured-section .featured-item{
+    padding: 8%;
+}
+
+.featured-section h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.featured-section p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px;
+    padding-left: 0%;
+}
+
+.featured-section .button{
+    width: max-content;
+}
+
+.featured-section .featured-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* popular Recipes */
+.popular-section{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.receipes{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    height: max-content;
+    text-align: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.recipe{
+    background-color: #e0ceca;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.recipe img{
+    height: 50%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 20px ;
+}
+
+.recipe p{
+    padding: 10px;
+    font-weight: 400;
+}
+
+.recipe .button{
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+/* submit-recipe */
+.submit-recipe {
+    background-color: #e0ceca;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-recipe h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.submit-recipe form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-recipe input, .submit-recipe textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #eed8d8;
+    border-radius: 5px;
+}
+
+.submit-recipe button {
+    color: #fbfbfb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: max-content;
+    align-self: center;
+}
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.footer a {
+    color: #f17a5d;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 425px){
+    .navbar h1{
+        font-size: 2.5rem;
+    }
+    .navbar ul{
+        font-size: .9rem;
+    } 
+    .receipes {
+        display: flex;
+        flex-direction: column;
+    }
+    .recipe img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-section {
+        flex-direction: column; /* Stack the title and recipes section vertically */
+    }
+
+    .receipes {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .recipe img {
+        height: 50%; 
+        width: 80%;
+    }
+
+    .recipe p {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+
+    .featured-section{
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    .featured-section img {
+        width: 80%; 
+        height: auto; /
+        margin-bottom: 20px; 
+    }
+
+    .featured-section .featured-item {
+        padding: 5%; 
+        align-items: center;
+    }
+
+    .featured-section h2 {
+        font-size: 2.5rem; 
+    }
+
+    .featured-section p {
+        font-size: 1rem; 
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header Section -->
+        <header>
+            <nav class="navbar" id="navbar">
+                <div class="logo">
+                    <h1>Delicious Recipes</h1>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#Categories">Categories</a></li>
+                        <li><a href="#Submit-Recipe">Submit a Recipe</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <!-- featured section -->
+        <div class="featured-section" id="featured-section">
+            <img src="./asserts/mutton-hyderabadi-biryani-01.jpg" alt="Mutton Briyani">
+            <div class="featured-item">
+                <h2>Mutton Briyani</h2>
+                <p> Mutton biryani is a delicious dish made of meat, spices, herbs & yogurt.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    <!-- Popular Recipes -->
+        <div class="popular-section" id="popular-section">
+            <h2>Popular Recipes</h2>
+            <div class="receipes">
+                <div class="recipe">
+                    <img src="./asserts/mutton-chukka-1656936666_ee6863b93aca4378c001.webp" alt="Chicken-Milagai-Kari">
+                    <h4>Mutton Chukka</h4>
+                    <p>Mutton Sukka is a spicy tasty dry curry made by cooking evenly cut small chops of mutton with tempered onions, spices and masala powders.</p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+                <div class="recipe">
+                    <img src="./asserts/chettinad-chicken-curry-nattukozhi-kozhambu.webp" alt="chettinad-chicken-curry-nattukozhi-kozhambu">
+                    <h4>Chettinad Chicken Curry Nattukozhi Kozhambu</h4>
+                    <p>This spicy nattu kozhi kulambu is made with shallots, crushed ginger and garlic, whole spices, roasted coconut and masala made from scratch.</p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+                <div class="recipe">
+                    <img src="./asserts/elaneer-payasam-1656751852_f9fd2cc0bea9c466a2ec.webp" alt="elaneer-payasam">
+                    <h4>Elaneer Payasam</h4>
+                    <p>Elaneer Payasam is a South-Indian dessert made with Tender Coconut Water and Tender Coconut Flesh along with reduced milk.</p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Submit Your Recipe -->
+        <div class="submit-recipe" id="submit-recipe">
+            <h2>Submit Your Recipe</h2>
+            <form>
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+    
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+    
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="6" required></textarea>
+    
+                <button type="submit" class="button">Submit Recipe</button>
+            </form>
+        </div>
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Delicious Recipes</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+</body>
